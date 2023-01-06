@@ -1,0 +1,27 @@
+email=input('email id:')
+phno=input('phno:')
+count=0
+count1=0
+c=0
+if email.endswith("@gmail.com") or email.endswith("@yahoo.com") or email.endswith("@adc.aditya.ac.in"):
+    count=count+1
+if len(phno)==10:
+    if phno.startswith("9") or phno.startswith("8") or phno.startswith("7") or phno.startswith("6"):
+        for i in phno:
+            if i.isdigit():
+                c=c+1
+if c==10 and count==1:
+    print('Registration successful')
+else:
+    print('check your details')
+    
+    
+ output:
+ email id:latha@gmail.com
+ phno:9876543456
+ Registration successful
+ 
+ output:
+ email id:dfgihugyf
+ phno:098765434567
+ check your details
